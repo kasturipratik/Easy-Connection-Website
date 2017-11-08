@@ -1,0 +1,1 @@
+document.getElementById("emp_form").onsubmit = emp_validation;

@@ -1,0 +1,180 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>User Sign up</title>
+<link rel="stylesheet" href="https://swe.umbc.edu/~ppratik1/is448/project/main.css" type="text/css"/>
+<link rel="stylesheet" href="https://swe.umbc.edu/~ppratik1/is448/project/contact.css" type="text/css"/>
+<link rel="stylesheet" href="https://swe.umbc.edu/~ppratik1/is448/project/employer.css" type="text/css"/>
+<script type="text/javascript" src="https://swe.umbc.edu/~ppratik1/is448/project/contact.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>
+
+
+</head>
+<body>
+<div class="body">
+
+<div>
+	
+		<ul>
+		<li><img class="logo_img" src="https://swe.umbc.edu/~ppratik1/is448/project/gambar planet saturnus.png" alt="logo"/></li>
+		<li class="menu"><a href="https://swe.umbc.edu/~ppratik1/is448/project/about.html">About Us</a></li>
+			
+		
+			<li class="menu"><a href="https://swe.umbc.edu/~ppratik1/is448/project/contact.php">Contact</a></li>
+				<li class="menu"><a href="https://swe.umbc.edu/~ppratik1/is448/project/main.php">Home</a></li>
+		</ul>
+		<p class="spacer"></p>
+	
+	<hr/>
+	</div>
+<div >
+		
+	<div class="form">
+	
+					<p class="usersignup">Sign Up Form </p>
+					<div id="logo">
+		<img class="logo" src="https://swe.umbc.edu/~ppratik1/is448/project/logo.png" alt= "logo"/>
+		<p class="spacer"></p>
+		</div>
+					<div>
+			
+		  <form action="" id="user_form" method="post" >
+		  
+		  <p class="error" id="lastname_error"></p>
+		  <p class="error" id="firstname_error"></p>
+		  <p class="error" id="city_error"></p>
+		  <p class="error" id="st_error"></p>
+		  <p class="error" id="state_error"></p>
+		  <p class="error" id="phone_error"></p>
+		  <p class="error" id="email_error"></p>
+		   <p class="error" id="zip_error"></p>
+		
+			   <p class="error" id="user_error"></p>	
+			    <p class="error" id="password_error"></p>
+				   <p class="error" id="security_error"></p>	
+			    <p class="error" id="answer_error"></p>
+				
+<div>
+<p class="fields">Fields with * are required.</p>
+	<label class="left">
+First Name *<br/><input type="text" id="firstname" name="fname"/> <br/>
+	</label>
+
+<label class="left">
+Last Name *<br/><input type="text" id="lastname" name="lname"/> <br/>
+
+		</label>
+		
+</div>
+
+<div>
+	<label class="left">
+Street *<br/><input type="text" id="st_address" name="street"/> <br/>
+	</label>
+	<label class="left">
+Zip Code *<br/><input type="text" maxlength="5" size="5" id="zipcode" name="zip" onblur = "getPlace(this.value)"/><br/>
+		</label>
+
+	<p class="clearboth"></p>
+</div>
+
+<div>
+<label class="left">
+County/City*<br/><input type="text" id="city" name="city"/> <br/>
+		</label>
+	<label class="left">
+	State *<br/><input type="text"  maxlength="2" size="2" id="state" name="state"/> 
+ <br/>
+	</label>
+
+	<p class="clearboth"></p>
+</div>
+
+
+<div>
+<label  class="label left">
+Phone Number* <br/><input type="text" maxlength="12" size="12" id="phone" name="phone" />	 
+</label>
+<label  class="label left">
+Email* <br/><input type="text" id="email" name="email" />	 
+</label>
+	
+	<br/><br/>
+	<p class="clearboth"></p>
+</div>
+<br/>
+
+
+<div>
+<label>
+	Username* <input type="text" name="uname" id="uname"/>         
+</label>
+<br/><br/>
+<label>
+Create Password* <input type="password" size="16" name="cpassword" id="cpassword"/>
+<label>
+<br/><br/>
+<label>
+Retype Password* <input type="password" size ="16" name="rpassword" id="rpassword"/>
+</label>
+
+</div>
+<div>
+
+<p class="fields"> Security Questions</p>
+<select name="sec_question" id="security">
+<option value="">Select</option>
+  <option value="What is your mothers madien name?">What is your mothers madien name?</option>
+  <option value="What is your home town?">What is your home town?</option>
+  <option value="Where did you go to High School?">Where did you go to High School?</option>
+  <option value="What street did you grow up on?">What street did you grow up on?</option>
+ <option value="What is your favorite fruit?">What is your favorite fruit?</option>
+  <option value="What is your favorite sports?">What is your favorite sports?</option>
+   <option value="What is your favorite athlete?">What is your favorite athlete?</option>
+
+  </select>
+  
+   <!--social media sites for facebook and twitter-->
+ 	<div class="connect_padding">
+			<p class="connect"><a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="facebook" /></a></p>
+	 		<p class="connect"><a href="https://www.twitter.com/" target="_blank"><img src="twitter.png" alt="facebook"/></a></p>
+	
+	</div>
+
+  <label>
+  Answer* <input type="text" name="answer" id="answer"/>
+<label/>
+
+	<br/><br/>
+ 
+
+ <input class= "submit" type="submit"  value="Signup"/>        
+
+
+				
+				
+		  </form>
+		  <p class="spacer"></p>
+		</div>
+	  <div class="forgot_password">
+				
+				
+	  </div>
+				
+  </div>
+		
+		
+		
+		
+		
+  </div>
+	</div>
+<div class="footer">
+<hr/>
+<p class="border">Copyright © 2017 <img class="footer_img" src="https://swe.umbc.edu/~ppratik1/is448/project/gambar planet saturnus.png" alt="logo"/> Easy Connection. All rights reserved.</p>	
+</div>
+<script type="text/javascript" src="https://swe.umbc.edu/~ppratik1/is448/project/event_handler.js"></script>
+</body>
+</html>

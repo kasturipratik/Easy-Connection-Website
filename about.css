@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+.signup a{color:white;}
+
+/*the content within the black background of the body*/
+.paragraph{
+	max-width:500px;
+	margin-left: auto;
+	margin-right:auto;
+	width:auto;
+	height: auto;
+	background-color:#0B0B0B;
+	border-radius:50px; 
+	margin: 8% auto;
+	
+	margin-top: 8%;
+	opacity: 0.8;
+	padding-top: 0px ;
+}
+/*the paragraph of the body*/
+.who p{
+	color:white;
+	font-weight:bold;
+	padding-bottom: 5px;
+	text-align: center;
+	padding:5%;
+}
+/*facebook and twitter link css*/
+.icon img{
+		height:60px;
+	width:60px;
+	border-bottom: 2px solid white;
+	margin-left:10px;
+}
+
+#icon{padding-right:35%;
+padding-bottom: 50px;}
+
+.icon{
+	float: right;
+	
+	
+}
+.icon img:hover{
+	 box-shadow:1px 1px  10px 0px lightblue;
+	border-radius: 25px;
+
+}
+/*heading of the page*/
+.heading{
+font-size:15pt;
+	text-align: center;
+	margin-top: 20px;
+	width:40%;
+	float:right;
+	display: block;
+    margin-right:5%;
+	 font-family: Arial, Helvetica, sans-serif;
+	border-radius: 25px;
+	padding: 8px 16px;
+	background-color:#104997;
+	 box-shadow:1px 1px  20px  ; 
+	color:white;
+	font-weight: bolder;
+		text-transform: uppercase;
+}
+/*name of the company*/
+h2{
+	color:white;
+	text-align: center;
+}
+@media screen and (max-width: 500px) {
+	
+	.heading{
+		font-size:12pt;}
+	.paragraph{ border-radius: 0px;
+		margin: 0% 0%;
+		}
+	
+}
